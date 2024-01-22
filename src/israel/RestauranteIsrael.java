@@ -1,10 +1,23 @@
 package israel;
 
+/**
+ * La clase RestauranteIsrael gestiona los comensales del restaurante Israel y el stock de su almacén
+ * @author Alek Suso
+ * 
+ * @version 1.0
+ */
+
 public class RestauranteIsrael {
 	
 	private int patatas;
 	
 	private int calamares;
+	
+	/**
+	 * Constructor de la clase RestauranteIsrael con dos parámetros de entrada
+	 * @param a Representa la cantidad de patatas iniciales
+	 * @param b Representa la cantidad de calamares iniciales
+	 */
 	
 	public RestauranteIsrael(int a, int b) {
 		this.setPatatas(a);
@@ -21,10 +34,19 @@ public class RestauranteIsrael {
 		return ch;
 	}
 
+	/**
+	 * Método que permite añadir una cantidad de calamares especificada.
+	 * @param c Cantidad de calamares añadidos.
+	 */
+	
 	public void addCalamares(int c) {
 		this.setCalamares(this.getCalamares() + c);
 	}
 
+	/**
+	 * Método que permite añadir una cantidad de patatas especificada
+	 * @param d Cantidad de patatas añadidas.
+	 */
 	public void addPatatas(int d) {
 		this.setPatatas(this.getPatatas() + d);
 	}
@@ -52,21 +74,39 @@ public class RestauranteIsrael {
 		}
 	}
 
+	/**
+	 * Método que regresa el número de patatas.
+	 * @return El número de patatas.
+	 */
+	
 	public int getPatatas() {
 		return patatas;
 	}
+	
+	/**
+	 * Método que modifica el número de patatas totales.
+	 * @param patatas El número de patatas totales.
+	 */
 	
 	public void setPatatas(int patatas) {
 		this.patatas = patatas;
 	}
 
+	/**
+	 * Método que regresa el número de calamares.
+	 * @return El número de calamares.
+	 */
+	
 	public int getCalamares() {
 		return calamares;
 	}
 
+	/**
+	 * Método que modifica el número de calamares totales.
+	 * @param patatas El número de calamares totales.
+	 */
 	
 	public void setCalamares(int calamares) {
 		this.calamares = calamares;
 	}
-
 }
